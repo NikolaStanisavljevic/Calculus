@@ -1,0 +1,157 @@
+* {
+    outline: none;
+}
+
+@keyframes caluclus {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.calculus {
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 18%;
+    left: 26%;
+    /*transform: translate(-50%,0);*/
+    color: orangered;
+    animation-name: caluclus;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+.container  {
+    background-image: url("../images/img1.jpeg");
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+    margin: 180px auto;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 29px;
+}
+
+.button1 {
+    position: absolute;
+    padding: 25px;
+    left: 38%;
+    top: 39%;
+    width: 200px;
+    border-radius: 29px;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.button2 {
+    position: absolute;
+    padding: 25px;
+    left: 38%;
+    top: 61%;
+    width: 200px;
+    border-radius: 29px;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.modal {
+    display: none;
+    background: silver;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 20%;
+    top: 25%;
+    text-align: center;
+    border-radius: 29px;
+}
+
+.content {
+    font-size: 30px;
+    padding: 63px 2px;
+}
+
+.header {
+    font-size: 30px;
+    padding: 10px 0;
+}
+.footer {
+    font-size: 30px;
+}
+
+.close {
+    position: absolute;
+    right: 19px;
+    bottom: 11px;
+    padding: 11px;
+    border-radius: 29px;
+}
+
+.game ,
+.result {
+    background: silver;
+    border-radius: 29px;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+    position: absolute;
+    top: 70px;
+    left: 87px;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+
+.yes {
+    padding: 20px;
+    font-size: 23px;
+    width: 145px;
+    position: absolute;
+    top: 293px;
+    left: 105px;
+    border-radius: 29px;
+    transition: all .2s;
+}
+
+.no {
+    padding: 20px;
+    font-size: 23px;
+    width: 145px;
+    position: absolute;
+    top: 293px;
+    right: 105px;
+    border-radius: 29px;
+    transition: all .2s;
+}
+
+.question {
+    margin-top: 117px;
+}
+
+.currentState {
+    position: absolute;
+    right: 23px;
+}
+
+.yes:hover,
+.no:hover,
+.button1:hover,
+.button2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.yes:active,
+.no:active,
+.button1:active,
+.button2:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+

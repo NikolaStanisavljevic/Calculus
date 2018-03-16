@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculus | Vanila JS Calculator Game </title>
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="calculus">Calculus</div>
+        <button class="button1" onclick="startGame()">Nova Igra</button>
+        <button class="button2" onclick="showModal()">Uputstvo</button>
+
+        <div class="modal">
+            <div class="header">Uputstvo igre</div>
+            <div class="content">Odgovoriti na pitanje sa da ili ne<br> Primer: 128 + 12 = 140 </div>
+            <div class="footer">Srećno <button class="close" onclick="closeModal()">Zatvori</button></div>
+        </div>
+
+        <div class="game">
+            <p class="currentState">Rezultat</p>
+            <p class="question">Ubaciti pitanje ovde</p>
+            <button class="yes">DA</button>
+            <button class="no">NE</button>
+
+        </div>
+
+        <div class="result">
+            <p class="sum">Ubaciti rezultat ovde</p>
+            <p>Da li zelite da zapocnete novu igru?</p>
+            <button class="yes confirm" onclick="restartGame()">DA</button>
+            <button class="no refuse" onclick="quitGame()">NE</button>
+
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
