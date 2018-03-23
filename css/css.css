@@ -19,7 +19,6 @@
     position: absolute;
     top: 18%;
     left: 26%;
-    /*transform: translate(-50%,0);*/
     color: orangered;
     animation-name: caluclus;
     animation-duration: 2s;
